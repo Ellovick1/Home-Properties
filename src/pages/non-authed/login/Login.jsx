@@ -1,7 +1,6 @@
 import React, { useContext,useState,useRef,useEffect} from 'react';
 import  {Wrapper,Instruction } from './Login.styles'
 import { Link,useNavigate } from 'react-router-dom';
-import Logo from '../../../assets/Vertical_RGB_294.svg'
 import { FaEye, FaEyeSlash,FaInfoCircle } from 'react-icons/fa'
 import { MdClose } from 'react-icons/md'
 import Google from '../../../assets/Google.png'

@@ -1,6 +1,5 @@
-// import React from 'react'
-import SendMail from '../../modals/SendMail'
 import React, { useState } from 'react';
+import SendMail from '../../modals/SendMail'
 
 export default function Messages() {
 
@@ -17,7 +16,7 @@ export default function Messages() {
         
           }
       
-          
+
   return (
     <div className='lg:flex justify-around pt-8'>
         <div className='pt-8'>
