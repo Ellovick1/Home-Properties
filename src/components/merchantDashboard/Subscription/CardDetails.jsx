@@ -1,5 +1,8 @@
 import React from 'react'
 import SuccessMessage from '../../../components/modals/SuccessMessage'
+import Check_right from '../../../assets/check-circle.svg'
+import MasterCardLogo from '../../../assets/mastercard_logo.svg'
+import EditIcon from '../../../assets/edit-3.svg'
 
 const CardInformation = () => {
 
@@ -19,10 +22,15 @@ const CardInformation = () => {
               <h4 className='font-medium text-[#4C4C4C] text-[15px]'>Card number</h4>
               <p className='font-normal text-[#4C4C4C] text-[12px]'>Enter the 16 digits number on your card</p>
             </div>
-            <p className='text-[#0092EC] text-[20px] font-medium cursor-pointer'>Edit </p>
+            <div className='cursor-pointer flex gap-1'>
+            <p className='text-[#0092EC] text-[20px] font-medium '>Edit </p>
+            <img src={EditIcon} alt=""  className='' />
+            </div>
           </div>
-          <div>
-            <input type="number" name="password" id="password" placeholder="" className="bg-[#f9f9f9] py-3 border  w-[85%] focus:outline-none"  />
+          <div className='relative px-2'>
+            <input type="number" name="password" id="password" placeholder="" className="bg-[#f9f9f9] pl-[4rem] py-3 border  w-[85%] focus:outline-none"  />
+            <img src={MasterCardLogo} alt="" className='absolute top-0 left-4 w-[3rem]'/>
+            <img src={Check_right} alt=""  className='absolute top-[0.7rem] right-44' />
           </div>
         </div>
 
@@ -66,7 +74,7 @@ const CardInformation = () => {
         </div>
       
           <div className='flex mt-3 relative'>
-                    <SuccessMessage type="submit" value="Send" className='bg-[#0092EC] hover:bg-sky-300  px-[4rem] py-2 text-white w-[100%]' />
+                    <SuccessMessage type="submit" value="Send" className='bg-[#0092EC] hover:bg-[blue]  px-[4rem] py-2 text-white w-[100%]' />
             </div>
 
       </form>

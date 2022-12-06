@@ -30,9 +30,7 @@ function App() {
           <Routes>
              <Route path='/' element= { <CreateAccount />} />
              <Route path='/login' element= { <Login />} />
-          </Routes>
-
-          <Routes>
+         
           <Route path="/merchant-dashboard" element={<MerchantDashboard />}>
             <Route index element={<Overview />} />
             <Route path="properties" element={<Properties />} />

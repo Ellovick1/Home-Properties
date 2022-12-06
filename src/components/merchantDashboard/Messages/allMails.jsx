@@ -1,11 +1,7 @@
 import React from 'react'
 
-function allMails() {
-    return (
-        <div>
-          hello 
-        </div>
-    )
+export const allMails = () => {
+  return (
+    <div>allMails</div>
+  )
 }
-
-export default allMails
