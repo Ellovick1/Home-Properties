@@ -2,12 +2,15 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 // import useLogout from "../../hooks/useLogout";
 import { useAuthContext } from "../../context/useAuthContext";
-import { MdDashboard, MdPersonOutline, MdOutlineGroups } from "react-icons/md";
+import { MdDashboard, MdOutlineGroups } from "react-icons/md";
 import { HiArrowNarrowLeft, HiChat, HiChartSquareBar } from "react-icons/hi";
 import { FiHome } from "react-icons/fi";
 import { IoPaperPlaneOutline, IoSettingsOutline } from "react-icons/io5";
 import { BsFileEarmarkText } from "react-icons/bs";
 import { TiArrowSync } from "react-icons/ti";
+import UploadFileIcon from '@mui/icons-material/UploadFile';
+import SubscriptionIcon from '../../assets/subscription.svg'
+import LogoutIcon from '../../assets/Logout.svg'
 
 const Sidebar = () => {
   const [open, setOpen] = useState(true);
@@ -45,7 +48,7 @@ const Sidebar = () => {
               ? "text-white bg-[#0092EC]"
               : "text-[#919191]"
           } mt-6 mb-3 py-2  flex items-center gap-2 transition-all pl-3 hover:text-[#0092EC] hover:bg-white`}>
-          <MdDashboard className="text-xl" />
+        <FiHome className="text-xl" />
           <h3 className={`${!open && "hidden"} `}>Overview</h3>
         </Link>
 
@@ -55,7 +58,7 @@ const Sidebar = () => {
           className={`${
             activeClass === "properties" ? "text-white bg-[#0092EC]" : "text-[#919191]"
           }  mb-3 py-2  flex items-center gap-2 transition-all pl-3 hover:text-[#0092EC] hover:bg-white`}>
-          <FiHome className="text-xl" />
+            <MdDashboard className="text-xl" />
           <h3 className={`${!open && "hidden"} `}> Properties</h3>
         </Link>
 
@@ -65,7 +68,7 @@ const Sidebar = () => {
           className={`${
             activeClass === "tenants" ? "text-white bg-[#0092EC]" : "text-[#919191]"
           }  mb-3 py-2  flex items-center gap-2 transition-all pl-3 hover:text-[#0092EC] hover:bg-white`}>
-          <MdPersonOutline className="text-xl" />
+          <MdOutlineGroups className="text-xl" />
           <h3 className={`${!open && "hidden"} `}> Tenants</h3>
         </Link>
 
@@ -75,7 +78,7 @@ const Sidebar = () => {
           className={`${
             activeClass === "fileUpload" ? "text-white bg-[#0092EC]" : "text-[#919191]"
           }  mb-3 py-2  flex items-center gap-2 transition-all pl-3 hover:text-[#0092EC] hover:bg-white`}>
-          <IoPaperPlaneOutline className="text-xl" />
+          <UploadFileIcon className="text-xl" />
           <h3 className={`${!open && "hidden"} `}>File Upload</h3>
         </Link>
 
@@ -83,10 +86,10 @@ const Sidebar = () => {
           onClick={() => setActiveClass("subscription")}
           to="/merchant-dashboard/subscription"
           className={`${
-            activeClass === "subcription" ? "text-white bg-[#0092EC]" : "text-[#919191]"
+            activeClass === "subscription" ? "text-white bg-[#0092EC]" : "text-[#919191]"
           }  mb-3 py-2  flex items-center gap-2 transition-all pl-3 hover:text-[#0092EC] hover:bg-white`}>
-          <HiChat className="text-xl" />
-          <h3 className={`${!open && "hidden"} `}>Subcription</h3>
+          <img src={SubscriptionIcon} alt="" />
+          <h3 className={`${!open && "hidden"} `}>Subscription</h3>
         </Link>
 
         <Link
@@ -112,7 +115,7 @@ const Sidebar = () => {
         <div
           onClick={handleClick} style={{background: 'rgba(0, 146, 236, 0.2)'}}
           className="absolute bottom-0 w-[94%] mb-3 pl-3 py-2 text-[#0092EC] flex items-center gap-2 cursor-pointer transition-all hover:text-[#0092EC] hover:pl-3 hover:bg-white">
-          <TiArrowSync className="text-2xl" />
+          <img src={LogoutIcon} alt="" />
             <Link to='/login'>
           <h3 className={`${!open && "hidden"} `}>Logout</h3>
             </Link>
