@@ -1,6 +1,6 @@
 import React from 'react'
 import Pdf_File from '../../assets/Dashboard-Imags/pdf-file.png'
-import './fileUpload.css'
+import './fileupload.css'
 
 
 function filesUpload() {
