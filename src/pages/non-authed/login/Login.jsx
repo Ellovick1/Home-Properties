@@ -85,9 +85,6 @@ const Login = () => {
 
           <div className="w-full bg-white rounded-lg md:mt-0 sm:max-w-md xl:p-0">
             <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
-              <a href="#" className="h-[7rem] w-[8rem] flex items-center m-auto">
-                {/* <img className="w-[100%] h-[100%] object-fit" src={Logo} alt="" /> */}
-              </a>
                
             { error && <div role="alert" class="rounded border-l-4 border-red-500 bg-red-50 p-4">
                <strong class="block font-medium text-red-700"> {error}</strong>
