@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-// import SidebarLogo from "../../assets/react.svg";
 // import useLogout from "../../hooks/useLogout";
 import { useAuthContext } from "../../context/useAuthContext";
 import { MdDashboard, MdPersonOutline, MdOutlineGroups } from "react-icons/md";
@@ -34,7 +33,7 @@ const Sidebar = () => {
 
       <div className={` md:pl-3`}>
         <div className={`${open ? "block" : "hidden"} transition`}>
-        <h3 className="text-[#FFFFFF] text-center font-semibold text-[2rem]">LOGO</h3>
+        <h3 className="text-[#FFFFFF] text-center mr-[3rem] font-semibold text-[2rem]">LOGO</h3>
           {/* <img className={`w-[8rem] ml-4`} alt="logo" src={SidebarLogo} /> */}
         </div>
 

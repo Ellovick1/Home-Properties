@@ -38,8 +38,9 @@ function filesUpload() {
                             <small className='text-center'>Drop your file here or click here to <span className='text-[#0092EC] cursor-pointer'>upload</span></small>
                     </div>
                 </div>
-
-                <small className='font-700 text-center'>Max size of the image should be 8MB, PDF, JPG, PNG</small>
+                    <div className=' text-center'>
+                <small className='font-700'>Max size of the image should be 8MB, PDF, JPG, PNG</small>
+                    </div>
 
             </div>
         </div>
