@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Avatar from '../../assets/Dashboard-Imags/avatar.svg'
+import Notification from '../../assets/notification.svg'
 
 const NewMerchantNavbar = () => {
   const [searchInput, setSearchInput] = useState(false);
@@ -40,10 +41,17 @@ const NewMerchantNavbar = () => {
             className="object-cover w-full h-full "
             />
         </div>
-              <div className="w-24">
+              <div className="w-28">
               <h4 className="font-Manrope text-[9px] font-bold text-[#4C4C4C]">Owai Owai</h4>
               <p className="text-[#A7A7A7] font-500 text-[9px]">Property Owner</p>
               </div>
+           <div className="bg-[#F5F4F7] ml-4 p-2 rounded-full">
+           <img
+            src={Notification}
+            alt="img"
+            className="object-cover w-full h-full "
+            />
+           </div>
             </div>
        </div> 
        {/* <div className="relative max-w-[250px] w-full">

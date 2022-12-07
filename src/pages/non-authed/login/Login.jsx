@@ -184,7 +184,7 @@ const Login = () => {
                 className={`w-full text-white rounded text-sm px-5 py-2.5 text-center outline-none cursor-pointer ${ !validEmail || !validPwd ? 'cursor-not-allowed bg-[skyblue]' : 'cursor-pointer bg-[#0092EC]'}`}>
                   { loading ? 'loading..':' Log in'}
                   </button>
-                  <small className='text-[12px]'> Don't have an account? <Link className='text-[#0092EC]' to='/'>Sign in</Link></small>
+                  <small className='text-[12px] '> Don't have an account? <Link className='text-[#0092EC]' to='/'>Sign in</Link></small>
               </form>
             </div>
           </div>
