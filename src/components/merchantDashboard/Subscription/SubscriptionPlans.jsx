@@ -20,7 +20,7 @@ const handleSubmit =  e => {
                 <div key={index} >
                     <div className="bg-white p-4 w-[20rem] text-center">
                        <div className="">
-                            <p className="font-bold text-[25px] mb-0">{value.subcriptionName} </p>
+                            <p className="font-bold text-[25px] mb-0 flex place-items-center justify-center gap-2"> <div><img  src={value.img }   className="object-cover w-full h-full " /></div> {value.subcriptionName} </p>
                             <p className="font-medium text-[#4C4C4C] text-[20px]">{value.contacts}</p>
                         
                        </div>

@@ -5,6 +5,7 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import { Link } from 'react-router-dom';
+import Tick_right_green from '../../assets/tick_right_green.png'
 
 
 const style = {
@@ -48,8 +49,11 @@ function Success() {
             >
                 <Box sx={style}>
                     <div className="px-4 font-Inter">
+                       <div className="flex justify-center pb-2">
+                       <img src={Tick_right_green} alt="tick" />
+                       </div>
                         <h3 className='font-semibold text-lg leading-5 tracking-tight text-black text-center'>Success!!</h3>
-                   <h3  className="text-center text-[#4C4C4C]">Your subscription was successful.</h3>
+                   <h3  className="text-center text-[#4C4C4C]">Your subscription was successful</h3>
                         <form className="pt-4 flex flex-col gap-2">
                            <div className='text-center'>
                            <Link

@@ -42,7 +42,7 @@ export default TableData;
 
 
 const data = [
-    { Date: "30 Nov 2022", Payment_details: 'Silver (annually)', Amount: "N20, 000", Status: 'TableDataroved', color: 'green' },
+    { Date: "30 Nov 2022", Payment_details: 'Silver (annually)', Amount: "N20, 000", Status: 'Approved', color: 'green' },
     { Date: "30 Nov 2022", Payment_details: 'Silver (annually)', Amount: "N20, 000", Status: 'Declined', color: 'red' },
     { Date: "30 Nov 2022", Payment_details: 'Silver (annually)', Amount: "N20, 000", Status: 'Declined', color: 'red' },
     { Date: "30 Nov 2022", Payment_details: 'Silver (annually)', Amount: "N20, 000", Status: 'Declined', color: 'red' },
