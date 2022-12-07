@@ -6,6 +6,8 @@ import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import { Link } from 'react-router-dom';
 import MailSentImage from '../../assets/Mailsent.png'
+import SentIcon from '../../assets/sendIcon.png'
+import { FiHome } from "react-icons/fi";
 
 
 const style = {
@@ -33,9 +35,10 @@ function SendMail() {
     return (
         <div>
             <div onClick={handleOpen} >
+              
                 <button type="submit" value="Send"
-                    className='bg-[#0092EC] hover:bg-sky-300  px-[4rem] py-2 text-white w-96 '>
-                    Send Mail</button>
+                    className='bg-[#0092EC] hover:bg-sky-300 flex gap-2 justify-center  px-[4rem] py-2 text-white w-96 '>
+                      <img src={SentIcon} alt="" /> Send Mail</button>
             </div>
             <Modal
                 open={open}
@@ -59,10 +62,11 @@ function SendMail() {
                                     className={`${activeClass === "message"
                                             ? "text-white bg-[#0092EC]"
                                             : "text-[#919191]"
-                                        } py-2  flex items-center gap-2 transition-all hover:text-[#0092EC] hover:bg-white `}>
+                                        } py-2  flex items-center gap-2 transition-all hover:text-[#0092EC] relative hover:bg-white `}>
+                                    <FiHome className="text-xl text-white absolute mx-auto left-0 right-[9rem]" />
                                     <input
                                         type="submit"
-                                        value="Check Queue"
+                                        value="Check Queue "
                                         className="bg-[skyblue] text-white font-semibold py-3 w-full mx-auto cursor-pointer"
                                     /></Link>
                             </div>
@@ -73,7 +77,8 @@ function SendMail() {
                                     className={`${activeClass === "merchant-dashboard"
                                             ? "text-white bg-[#0092EC]"
                                             : "text-[#919191]"
-                                        } py-2  flex items-center gap-2 transition-all hover:text-[#0092EC] hover:bg-white `}>
+                                        } py-2  flex items-center gap-2 transition-all relative hover:text-[#0092EC] hover:bg-white `}>
+                                    <FiHome className="text-xl text-white absolute mx-auto left-0 right-[7rem]" />
                                     <input
 
                                         type="submit"
