@@ -71,7 +71,7 @@ const Login = () => {
     }
     setLoading(true)
     console.log(email,pwd)
-    setSuccess('signed in successfully,you are re-directed to verify your mail')
+    setSuccess('Login in successfully')
     setTimeout(() => { 
       navigate('/merchant-dashboard')
     },1200)
@@ -83,7 +83,7 @@ const Login = () => {
       <section className="">
         <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
 
-          <div className="w-full bg-white rounded-lg md:mt-0 sm:max-w-md xl:p-0">
+          <div className="w-full bg-white outline-none md:mt-0 sm:max-w-md xl:p-0">
             <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
                
             { error && <div role="alert" class="rounded border-l-4 border-red-500 bg-red-50 p-4">
@@ -125,7 +125,7 @@ const Login = () => {
                   onFocus={() => setEmailFocus(true)}
                   onBlur={() => setEmailFocus(false)}
                   ref = {emailRef}
-                  className="border border-gray-300 text-gray-900 sm:text-sm rounded-lg block w-full p-2.5 dark:placeholder-gray-400" placeholder="Enter your email" 
+                  className="border border-gray-300 text-gray-900 sm:text-sm outline-none block w-full p-2.5 dark:placeholder-gray-400" placeholder="you@company.com" 
                   required 
                   />
                   { emailFocus && email && !validEmail  ?( <Instruction  id="uidnote">
@@ -148,7 +148,7 @@ const Login = () => {
                   aria-describedby="pwdnote"
                   onFocus={() => setPwdFocus(true)}
                   onBlur={() => setPwdFocus(false)}
-                   className="border border-gray-300 text-gray-900 sm:text-sm rounded-lg block w-full p-2.5 dark:placeholder-gray-400"
+                   className="border border-gray-300 text-gray-900 sm:text-sm outline-none block w-full p-2.5 dark:placeholder-gray-400"
                   required />
                   
                    <span class="absolute  inline-flex items-center right-4 top-[55%]">
@@ -173,7 +173,7 @@ const Login = () => {
                             Must have a combination of  uppercase and lowercase, numbers and a special character.<br />
                             <span aria-label="exclamation mark">!</span> <span aria-label="at symbol">@</span> <span aria-label="hashtag">#</span> <span aria-label="dollar sign">$</span> <span aria-label="percent">%</span>
                         </Instruction > ) : ''  }
-                <div className="flex  justify-between mt-1">
+                <div className="flex  justify-between mt-0">
                     <small className='text-[8px]'> Must have a combination of  uppercase and lowercase, numbers </small>
                   <Link to='/' className="text-[9px] font-medium text-[skyblue] hover:underline dark:text-primary-500">Forgot password?</Link>
                 </div>
@@ -181,7 +181,7 @@ const Login = () => {
                 <button 
                           disabled = {!validEmail || !validPwd  ? true : false}
                 type="submit" 
-                className={`w-full text-white bg-[#0092EC] hover:bg-[skyblue] rounded text-sm px-5 py-2.5 text-center outline-none cursor-pointer ${ !validEmail || !validPwd ? 'cursor-not-allowed' : 'cursor-pointer'}`}>
+                className={`w-full text-white rounded text-sm px-5 py-2.5 text-center outline-none cursor-pointer ${ !validEmail || !validPwd ? 'cursor-not-allowed bg-[skyblue]' : 'cursor-pointer bg-[#0092EC]'}`}>
                   { loading ? 'loading..':' Log in'}
                   </button>
                   <small className='text-[12px]'> Don't have an account? <Link className='text-[#0092EC]' to='/'>Sign in</Link></small>

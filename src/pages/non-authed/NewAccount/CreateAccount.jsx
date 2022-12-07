@@ -70,7 +70,7 @@ const CreateAccount = () => {
     }
     setLoading(true)
     console.log(email,pwd)
-    setSuccess('signed in successfully')
+    setSuccess('Successfully created an Account')
     setTimeout(() => { 
       navigate('/merchant-dashboard')
     },1200)
@@ -125,7 +125,7 @@ const CreateAccount = () => {
                   onFocus={() => setFullName(true)}
                   onBlur={() => setFullName(false)}
                 //   ref = {emailRef}
-                  className="border border-gray-300 text-gray-900 sm:text-sm rounded outline-none-lg block w-full p-2.5 dark:placeholder-gray-400" placeholder="your name" 
+                  className="border border-gray-300 text-gray-900 sm:text-sm rounded outline-none block w-full p-2.5 dark:placeholder-gray-400" placeholder="your name" 
                   required 
                   />
                  
@@ -149,7 +149,7 @@ const CreateAccount = () => {
                   onFocus={() => setEmailFocus(true)}
                   onBlur={() => setEmailFocus(false)}
                   ref = {emailRef}
-                  className="border border-gray-300 text-gray-900 sm:text-sm rounded outline-none-lg block w-full p-2.5 dark:placeholder-gray-400" placeholder="you@company.com" 
+                  className="border border-gray-300 text-gray-900 sm:text-sm rounded outline-none block w-full p-2.5 dark:placeholder-gray-400" placeholder="you@company.com" 
                   required 
                   />
                   { emailFocus && email && !validEmail  ?( <Instruction  id="uidnote">
@@ -177,7 +177,7 @@ const CreateAccount = () => {
                   onFocus={() => setEmailFocus(true)}
                   onBlur={() => setEmailFocus(false)}
                   ref = {emailRef}
-                  className="border border-gray-300 text-gray-900 sm:text-sm rounded outline-none-lg block w-full p-2.5 dark:placeholder-gray-400" placeholder="you@company.com" 
+                  className="border border-gray-300 text-gray-900 sm:text-sm rounded outline-none block w-full p-2.5 dark:placeholder-gray-400" placeholder="you@company.com" 
                   required 
                   />
                   { emailFocus && email && !validEmail  ?( <Instruction  id="uidnote">
@@ -200,7 +200,7 @@ const CreateAccount = () => {
                   aria-describedby="pwdnote"
                   onFocus={() => setPwdFocus(true)}
                   onBlur={() => setPwdFocus(false)}
-                   className="border border-gray-300 text-gray-900 sm:text-sm rounded outline-none-lg block w-full p-2.5 dark:placeholder-gray-400"
+                   className="border border-gray-300 text-gray-900 sm:text-sm rounded outline-none block w-full p-2.5 dark:placeholder-gray-400"
                   required />
                   
                    <span class="absolute  inline-flex items-center right-4 top-[55%]">
@@ -229,7 +229,7 @@ const CreateAccount = () => {
                 <button 
                           disabled = {!validEmail || !validPwd  ? true : false}
                 type="submit" 
-                className={`w-full text-white bg-[#0092EC] hover:bg-[skyblue] rounded  text-sm px-5 py-2.5 text-center outline-none cursor-pointer ${ !validEmail || !validPwd ? 'cursor-not-allowed' : 'cursor-pointer'}`}>
+                className={`w-full text-white ] rounded  text-sm px-5 py-2.5 text-center outline-none cursor-pointer ${ !validEmail || !validPwd ? 'cursor-not-allowed bg-[skyblue]' : 'cursor-pointer bg-[#0092EC]'}`}>
                   { loading ? 'loading..':' Create Account'}
                   </button>
                   <small className='text-[12px]'> Already have an account? <Link className='text-[#0092EC]' to='/login'>Sign in</Link></small>
