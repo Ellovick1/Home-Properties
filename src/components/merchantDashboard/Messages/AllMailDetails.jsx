@@ -2,7 +2,7 @@ import React from "react";
 
 const AllMailDetails = ({ activeClass, setActiveClass}) => {
   return (
-    <div className="flex flex-col gap-[5rem] m-[1.5rem] py-4 px-12 rounded-[0.8rem] md:flex-row ">
+    <div className="flex gap-[0] xl:gap-[5rem] m-[1.5rem] py-4 xl:px-12 rounded-[0.8rem] md:flex-row">
 
     <div
       onClick={() => setActiveClass("allMails")}

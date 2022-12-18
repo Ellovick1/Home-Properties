@@ -18,8 +18,8 @@ export default function Messages() {
       
 
   return (
-    <div className='lg:flex justify-around pt-8'>
-        <div className='pt-8'>
+    <div className='xl:flex block justify-around pt-8'>
+        <div className='pt-8 w-fit m-auto xl:m-4 mb-4 xl:mb-0'>
                 <h4 className='font-bold '>Property Memo</h4>
                 <p className='max- max-w-sm'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                     Quas ipsum commodi aliquid debitis sint cumque.
@@ -27,7 +27,7 @@ export default function Messages() {
                      cupiditate distinctio deserunt repellendus laboriosam</p>
         </div>
 
-        <div className='bg-white'>
+        <div className='bg-white  m-auto w-fit'>
         <form onSubmit={handleSubmit} className='py-8 md:p-8 text-center'>
             
             <input className='border py-2 px-5 w-96' type="text" name="" placeholder="Tenants name"  value={name} onChange={ e => setName(e.target.value)} /><br /><br />

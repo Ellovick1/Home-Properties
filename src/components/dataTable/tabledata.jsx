@@ -3,7 +3,7 @@ import React from 'react'
 
 function TableData() {
     return (
-        <div>
+        <div className='overflow-scroll lg:overflow-hidden'>
             <table className='min-w-full text-center bg-white my-4'>
                 <thead className="">
                     <tr>

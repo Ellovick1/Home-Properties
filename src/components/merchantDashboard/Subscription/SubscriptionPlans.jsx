@@ -14,11 +14,11 @@ const handleSubmit =  e => {
       }
 
     return (
-        <form  onSubmit={handleSubmit} className="flex gap-5 justify-center">
+        <form  onSubmit={handleSubmit} className="xl:flex gap-5 justify-center">
             {props.details.map((value, index) => (
 
-                <div key={index} >
-                    <div className="bg-white p-4 w-[20rem] text-center">
+                <div key={index} className="xl:w-[90%] w-[70%] mb-4 m-auto">
+                    <div className="bg-white p-4  text-center">
                        <div className="">
                             <p className="font-bold text-[25px] mb-0 flex place-items-center justify-center gap-2"> <div><img  src={value.img }   className="object-cover w-full h-full " /></div> {value.subcriptionName} </p>
                             <p className="font-medium text-[#4C4C4C] text-[20px]">{value.contacts}</p>

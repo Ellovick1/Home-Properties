@@ -19,17 +19,17 @@ const NewMerchantNavbar = () => {
       className="relative bg-white py-4 w-full border flex justify-between items-center px-2 md:px-8
     ">
       <div>
-        <h4 className="font-Manrope font-bold text-[#4C4C4C]">Welcome, Owai👋</h4>
-        <p className="text-[#A7A7A7] font-500">Here’ what’s happening in your account today.</p>
+        <h4 className="font-Manrope font-bold text-[#4C4C4C]  text-[0.6rem] lg:text-[1rem]">Welcome, Owai👋</h4>
+        <p className="text-[#A7A7A7] font-500 text-[0.6rem] lg:text-[1rem]">Here’ what’s happening in your account today.</p>
       </div>
      
      <div className="flex items-center space-x-1">
-      <div className="bg-[#F5F4F7] rounded-xl max-w-md w-full  items-end px-8 mr-8 hidden sm:flex sm:gap-3">
+      <div className="bg-[#F5F4F7] rounded-xl max-w-md w-full  items-end lg:px-8 mr-8 hidden sm:flex sm:gap-3">
         <i className="bi bi-search text-[#BBBABD] text-[20px]"></i>
         <input
           type="text"
           placeholder="Search by full name, text"
-          className=" rounded-3xl outline-none pl-1 py-2 bg-transparent"
+          className="placeholder-[0.5rem] lg:placeholder-[1rem] rounded-3xl outline-none pl-1 py-2 bg-transparent w-[100%]"
         />
          
       </div>

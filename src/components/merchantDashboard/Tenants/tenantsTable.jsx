@@ -97,9 +97,9 @@ function RequestTable() {
                                             <td className="px-6 py-4 whitespace-nowrap text-sm  font-[400] text-[black]">{value.rent_amount}</td>
                                             <td className="px-6 py-4 whitespace-nowrap text-sm  font-[400] text-[black]">{value.date_due}</td>
                                             <td className={`${value.color === "green" ? "text-[#219653]" : "text-[#EB5757]"} px-6 py-4 whitespace-nowrap text-sm  font-[400]`}>{value.Status}</td>
-                                            <td className='cursor-pointer'>
+                                            {/* <td className='cursor-pointer'>
                                                 ...
-                                            </td>
+                                            </td> */}
                                         </tr>
                                     )
                                 })}
