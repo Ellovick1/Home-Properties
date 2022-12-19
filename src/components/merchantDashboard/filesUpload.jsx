@@ -15,19 +15,19 @@ function filesUpload() {
                     <p className="text-[#000] font-600">To <span className='text-[skyblue]'>'add multiple users records'</span> download, fill and upload the <span className='text-[skyblue]'>'user template' </span> file</p>
                 </div>
 
-                <div className='flex justify-content-center gap-4'>
-                    <div className='h-[260px] w-[50%] rounded-lg border-dashed border-2 grid'>
+                <div className='lg:flex justify-content-center gap-4'>
+                    <div className='lg:mb-1 mb-8 h-[260px] w-[50%] m-auto rounded-lg border-dashed border-2 grid'>
                         <div className='flex place-items-end justify-center'>
                             <label for="file-upload" class="custom-file-upload">
                                 <img src={Pdf_File} alt="img" className="object-cover w-full h-full " />
                             </label>
                             <input id="file-upload" type="file" />
-
+ 
                         </div>
                             <small className='text-center'>Drop your file here or click here to <span className='text-[#0092EC] cursor-pointer'>upload</span></small>
                     </div>
 
-                    <div className='h-[260px] w-[50%] rounded-lg border-dashed border-2 grid'>
+                    <div className='h-[260px] w-[50%] m-auto rounded-lg border-dashed border-2 grid'>
                         <div className='flex place-items-end justify-center'>
                             <label for="file-upload" class="custom-file-upload">
                                 <img src={Pdf_File} alt="img" className="object-cover w-full h-full " />

@@ -30,19 +30,19 @@ const CardInformation = () => {
           <div className='relative px-2'>
             <input type="number" name="password" id="password" placeholder="" className="bg-[#f9f9f9] pl-[4rem] py-3 border  w-[85%] focus:outline-none"  />
             <img src={MasterCardLogo} alt="" className='absolute top-0 left-4 w-[3rem]'/>
-            <img src={Check_right} alt=""  className='absolute top-[0.7rem] right-44' />
+            <img src={Check_right} alt=""  className='absolute top-[0.7rem] right-[18%]' />
           </div>
         </div>
 
-        <div className='flex  justify-between place-items-center py-6  w-[85%]'>
-          <div>
+        <div className='lg:flex  justify-between place-items-center py-6  w-[85%]'>
+          <div className='pr-4'>
             <h4 className='font-medium text-[#4C4C4C] text-[15px]'>CVV number</h4>
             <p className='font-normal text-[#4C4C4C] text-[12px]  mb-4'>Enter the 3 digits number on your card</p>
             <input type="number" name="password" id="password" placeholder="CVV" className="bg-[#f9f9f9] py-3  px-3 border focus:outline-none"  />
           </div>
 
           <div>
-            <h4 className='font-medium text-[#4C4C4C] text-[15px]'>Expiry date</h4>
+            <h4 className='font-medium text-[#4C4C4C] text-[15px] mt-4'>Expiry date</h4>
             <p className='font-normal text-[#4C4C4C] text-[12px] mb-4'>Enter the expiry date for your card</p>
             <div className='flex gap-8'>
               <div class="mb-3">
